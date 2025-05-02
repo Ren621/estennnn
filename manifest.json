@@ -1,25 +1,26 @@
-
 {
-  "name": "Nyaa.si Anime Torrent Search",
+  "name": "Nyaa Anime Extension",
   "version": "1.0.0",
-  "description": "Cerca anime in 1080p, con doppiaggio italiano o sottotitoli italiani, su Nyaa.si",
-  "id": "nyaa-anime-torrent",
+  "description": "Cerca anime in 1080p con sottotitoli o doppiaggio in italiano su Nyaa.si",
+  "id": "nyaa-anime-extension",
   "type": "torrent",
   "accuracy": "high",
-  "icon": "https://www.example.com/icon.png",
+  "ratio": "perma",
+  "icon": "https://nyaa.si/favicon.ico",
   "media": "both",
   "languages": ["IT"],
-  "code": "file:extension.ts",
+  "update": "gh:Ren621/estennnn",
+  "code": "gh:Ren621/estennnn",
   "options": {
     "resolution": {
       "type": "string",
-      "description": "La risoluzione dei torrent da cercare",
-      "default": "1080p"
+      "description": "Risoluzione preferita per i torrent",
+      "default": "1080"
     },
-    "media": {
+    "type": {
       "type": "string",
-      "description": "Tipo di contenuto (sub o dub)",
-      "default": "both"
+      "description": "Tipo di audio preferito (sub/dub)",
+      "default": "dub"
     }
   }
 }
